@@ -1,0 +1,120 @@
+.bgHome {
+  background-image: url("/src/assets/home/background-home-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+}
+
+.infoCon {
+  margin: 3rem auto;
+}
+
+.text-title {
+  color: var(--medium_color);
+  margin: auto;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  font-size: 16px;
+}
+
+.space {
+  text-transform: uppercase;
+  font-size: 80px;
+  font-family: var(--bellefair);
+}
+
+.text {
+  color: var(--medium_color);
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.explore {
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+.explore:hover {
+/* background: #FFFFFF; */
+/* mix-blend-mode: normal; */
+/* opacity: 0.1; */
+/* color: #d7d7d7; */
+  transition: ease-in-out 0.5s;
+  box-shadow: 0px 0px 0px 5vw rgba(0, 0, 0, 0.5);
+}
+
+.explore p {
+  font-family: var(--bellefair);
+  color: black;
+  transform: translateY(10px);
+  font-size: 20px;
+  color: var(--dark-color);
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  .bgHome {
+    background-image: url("/src//assets/home/background-home-tablet.jpg");
+  }
+
+  .infoCon {
+    width: 70%;
+    margin-bottom: 0;
+  }
+  .text-title {
+    font-size: 20px;
+  }
+
+  .space {
+    font-size: 150px;
+  }
+
+  .text {
+    padding: 0 20px;
+  }
+
+  .explore {
+    width: 240px;
+    height: 240px;
+  }
+
+  .explore p {
+    font-family: var(--bellefair);
+    color: black;
+    transform: translateY(10px);
+    font-size: 32px;
+    color: var(--dark-color);
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .bgHome {
+    background-image: url("/src//assets//home/background-home-desktop.jpg");
+  }
+
+  .infoCon {
+    margin-left: 10vw;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .infoCon * {
+    text-align: left;
+  }
+  .text-title {
+    font-size: 28px;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+  .text {
+    font-size: 19px;
+    padding: 0 20px 0 0;
+  }
+  .explore {
+    width: 240px;
+    height: 240px;
+  }
+}

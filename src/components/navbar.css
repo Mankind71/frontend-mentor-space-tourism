@@ -1,0 +1,81 @@
+.navbar {
+  width: 100vw;
+}
+.navlink {
+  text-transform: uppercase;
+  font-size: 16px !important;
+  color: white;
+  width: 100%;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+.navbar a {
+  color: #fff;
+}
+.navbar a:hover {
+  color: #fffa;
+}
+.logo {
+  border-bottom: none !important;
+}
+.menuBtn{
+  background-color: #ace;
+}
+.sidebar {
+  padding-left: 2rem;
+  background: rgba(255, 255, 255, 0.04) !important;
+  backdrop-filter: blur(20.7742px) !important;
+  width: 67% !important;
+  color: white !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar a.active {
+    border-bottom: solid 2px;
+    color: #fff !important;
+  }
+  .navbar a:hover {
+    border-bottom: solid 1px;
+    color: #fffa;
+  }
+  .sidebar {
+    backdrop-filter: blur(0px) !important;
+  }
+  .navlinkCon {
+    display: flex;
+    justify-content: space-around;
+    background: #421e2f;
+  }
+  .navlink {
+    padding: 30px 0 !important;
+    width: auto;
+    /* margin: 0 30px;  */
+    margin: 0 2vw;
+  }
+  .navlink span {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navlinkCon {
+    margin-top: 50px;
+    padding: 0 7rem;
+  }
+  .hr {
+    position: absolute;
+    background-color: #fff;
+    width: 600px;
+    width: 40%;
+    height: 2px;
+    z-index: 99;
+    top: 4.7rem;
+    left: 160px;
+  }
+  .logo {
+    margin-top: 3rem;
+  }
+  .navlink span {
+    display: inline;
+  }
+}

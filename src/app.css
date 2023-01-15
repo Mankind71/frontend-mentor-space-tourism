@@ -1,0 +1,15 @@
+.app {
+  position: relative;
+}
+.navbarCon {
+  position: absolute;
+}
+.topSpace {
+  padding-top: 6rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .topSpace {
+    padding-top: 10rem;
+  }
+}

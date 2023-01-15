@@ -1,0 +1,14 @@
+:root {
+  /* font-family: "Barlow Condensed", sans-serif; */
+  --bellefair: "Bellefair", serif;
+  --dark-color: #0b0d17;
+  --medium_color: #d0d6f9;
+}
+
+*{
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Barlow Condensed", sans-serif;
+}

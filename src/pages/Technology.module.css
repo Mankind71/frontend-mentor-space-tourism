@@ -1,0 +1,21 @@
+.bgTech {
+  background-image: url("/src/assets/technology/background-technology-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  color: white;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .bgTech {
+    background-image: url("/src//assets/technology/background-technology-tablet.jpg");
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .bgTech {
+    background-image: url("/src//assets/technology/background-technology-desktop.jpg");
+  }
+}

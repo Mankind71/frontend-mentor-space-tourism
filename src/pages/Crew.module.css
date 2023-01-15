@@ -1,0 +1,55 @@
+.bgCrew {
+  background-image: url("/src/assets/crew/background-crew-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  /* background: #0B0D17; */
+}
+.img{
+  margin: auto;
+  width: 80%;
+  height: 37vh;
+  border-bottom: 2px solid #383B4B;
+}
+.img img{
+  object-fit: contain;
+  height: 100%;
+}
+.carouselBtn{
+  margin: 25px 10px;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  opacity: .17;
+}
+.active{
+  opacity: 1;
+}
+.role{
+  text-transform: uppercase;
+  font-family: var(--bellefair);
+  font-size: 16px;
+  opacity: .5;
+  margin: 10px;
+}
+.bio{
+  margin: 0 auto;
+  width: 80%;
+  font-size: 15px;
+  color: var(--medium_color);
+}
+@media only screen and (min-width: 768px) {
+  .bgCrew {
+    background-image: url("/src//assets//crew/background-crew-tablet.jpg");
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .bgCrew {
+    background-image: url("/src//assets//crew/background-crew-desktop.jpg");
+  }
+}
