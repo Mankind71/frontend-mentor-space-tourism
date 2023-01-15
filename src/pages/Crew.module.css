@@ -5,7 +5,6 @@
   background-size: cover;
   min-height: 100vh;
   color: white;
-  /* background: #0B0D17; */
 }
 .img{
   margin: auto;
@@ -50,6 +49,22 @@
   .bgCrew {
     background-image: url("/src//assets//crew/background-crew-tablet.jpg");
   }
+  .crewBody{
+    padding-bottom: 0;
+  }
+  .role{
+    font-size: 24px;
+  }
+  .crewBody .carouselCon{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .crewBody .img{
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 50vh;
+  }
+  
 }
 
 @media only screen and (min-width: 992px) {

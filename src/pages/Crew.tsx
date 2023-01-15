@@ -22,24 +22,22 @@ const Crew = () => {
           <span>02</span>MEET YOUR CREW
         </h3>
       </div>
-      <div className="d-flex flex-column">
-        <div className={styles.carousel}>
-          <div className={`${styles.img} mt-3`}>
-            <img src={pf} className="" alt={crew.name} />
-          </div>
-          <div className="d-flex justify-content-center">
-            {crewData.map((c, i) => (
-              <div
-                key={i}
-                onClick={() => setNum(i)}
-                className={`${i == num ? styles.active : ""} ${
-                  styles.carouselBtn
-                }`}
-              ></div>
-            ))}
-          </div>
+      <div className={`${styles.crewBody} d-flex flex-column justify-content-md-between`}>
+        <div className={`${styles.img} mt-3 order-md-last`}>
+          <img src={pf} className="" alt={crew.name} />
         </div>
-        <div className="desc">
+        <div className={`${styles.carouselCon} d-flex justify-content-center`}>
+          {crewData.map((c, i) => (
+            <div
+              key={i}
+              onClick={() => setNum(i)}
+              className={`${i == num ? styles.active : ""} ${
+                styles.carouselBtn
+              }`}
+            ></div>
+          ))}
+        </div>
+        <div className={`${styles.desc} desc order-md-first`}>
           <div className={styles.role}>{crew.role}</div>
           <div className="dataName">{crew.name}</div>
           <div className="description">{crew.bio}</div>
