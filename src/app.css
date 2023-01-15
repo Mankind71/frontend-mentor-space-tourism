@@ -3,6 +3,7 @@
 }
 .navbarCon {
   position: absolute;
+  max-width: 100%;
 }
 .topSpace {
   padding-top: 6rem;

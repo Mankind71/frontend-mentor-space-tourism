@@ -35,8 +35,8 @@ const Technology = () => {
                 onClick={() => setNum(i)}
                 className={`${i == num ? styles.active : ""} ${
                   styles.carouselBtn
-                }`}
-              ></div>
+                } d-flex align-items-center justify-content-center`}
+              >{i+1}</div>
             ))}
           </div>
         </div>

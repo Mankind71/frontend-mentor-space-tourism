@@ -30,6 +30,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .navbar{
+    max-width: 100%;
+  }
   .navbar a.active {
     border-bottom: solid 2px;
     color: #fff !important;

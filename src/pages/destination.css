@@ -17,41 +17,44 @@
 .heroTitle h3 {
   font-size: 16px;
   text-transform: uppercase;
-letter-spacing: 2.7px;
+  margin-bottom: 2rem;
+  letter-spacing: 2.7px;
 }
 .heroImg {
   width: 170px;
-  height: 170px;
+  height: auto;
 }
 .heroImg img {
   width: 100%;
 }
 .contentTabs p {
+  font-size: 14px;
+  color: var(--medium_color);
   padding: 10px 0;
   margin-bottom: 0;
 }
-.contentTabs p:hover{
+.contentTabs p:hover {
   cursor: pointer;
-  color: #fffb;
   border-bottom: solid 1px #fffb;
 }
-.contentTabs .active{
+.contentTabs .active {
+  color: #fff;
   border-bottom: solid 2px white;
 }
 .name {
   margin-top: 0 !important;
   font-size: 56px;
   font-family: var(--bellefair);
+  text-transform: uppercase;
 }
-.dataName{
+.dataName {
   font-family: var(--bellefair);
   font-size: 24px;
   text-transform: uppercase;
 }
 .description {
   width: 100%;
-  padding: 10px 13px;
-  margin: auto;
+  padding: 10px 2rem;
   font-size: 15px;
   color: var(--medium_color);
 }
@@ -72,6 +75,38 @@ letter-spacing: 2.7px;
   .bgDest {
     background-image: url("/src//assets//destination/background-destination-tablet.jpg");
   }
+  .heroTitle h3 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 3rem;
+  }
+  .heroImg {
+    width: 300px;
+  }
+  .contentTabs div {
+    width: 50%;
+    margin: 1rem auto;
+  }
+.contentTabs p {
+  font-size: 16px;
+}
+.name{
+  font-size: 80px;
+}
+.description{
+  font-size: 16px;
+  width: 80%;
+  margin: auto;
+}
+.content hr{
+  width: 80%;
+  margin-left: 10%;
+}
+.details{
+  width: 60%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;  
+}
 }
 
 @media only screen and (min-width: 992px) {
