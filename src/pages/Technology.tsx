@@ -43,7 +43,7 @@ const Technology = () => {
 
       <Carousel>
         {techData.map((item, i) => (
-          <img key={i} src={pf} className="" alt={tech.name} />
+          <img key={i} src={item.images.landscape} className="" alt={tech.name} />
           // <Item key={i} item={item} />
         ))}
       </Carousel>
