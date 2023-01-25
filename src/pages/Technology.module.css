@@ -65,4 +65,31 @@
   .bgTech {
     background-image: url("/src//assets/technology/background-technology-desktop.jpg");
   }
+  .techBody{
+    width: 90%;
+    margin-left: 10%;
+    background-color: #acea;
+    justify-content: space-between;
+  }
+  .carousel{
+    background-color: #ace;
+  }
+  /* .desc{
+    width: 40%;
+  } */
+  .desc *{
+    /* background-color: #de2111; */
+    text-align: left;
+  }
+  .carouselBtn {
+    height: 80px;
+    width: 80px;
+  }
+  .role{
+    font-size: 16px;
+  }
+  .img{
+    /* background-color: #fff; */
+    /* width: 30%; */
+  }
 }

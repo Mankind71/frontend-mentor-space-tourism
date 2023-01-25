@@ -117,4 +117,17 @@
   .bgDest {
     background-image: url("/src//assets//destination/background-destination-desktop.jpg");
   }
+
+  .heroTitle h3 {
+    font-size: 28px;
+    padding-top: 4rem;
+    padding-left: 5rem;
+    margin-left: 5rem;
+  }
+  .dataName{
+    font-size: 56px;
+  }
+  .description{
+    font-size: 18px;
+  }
 }
