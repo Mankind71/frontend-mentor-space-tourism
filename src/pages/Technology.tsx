@@ -1,9 +1,8 @@
 import data from "../data.json";
 import { useEffect, useState } from "react";
-import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material'
+import Carousel from "react-material-ui-carousel";
+import { Paper, Button } from "@mui/material";
 import styles from "./Technology.module.css";
-
 
 const Technology = () => {
   const [num, setNum] = useState(0);
@@ -20,19 +19,18 @@ const Technology = () => {
       window.removeEventListener("resize", checkWidth);
     };
   });
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setNum((num) => (num == 2 ? 0 : num + 1));
-    }, 2500);
+  // useEffect(() => {
+  // const intervalId = setInterval(() => {
+  //   setNum((num) => (num == 2 ? 0 : num + 1));
+  // }, 2500);
 
-    return () => clearInterval(intervalId);
-  }, []);
+  // return () => clearInterval(intervalId);
+  // }, []);
 
   const pf = "." + (width > 992 ? tech.images.portrait : tech.images.landscape);
 
   console.log(pf);
-  
-  
+
   return (
     <div className={`${styles.bgTech} topSpace`}>
       <div className="heroTitle">
@@ -41,16 +39,23 @@ const Technology = () => {
         </h3>
       </div>
 
-      <Carousel>
-        {techData.map((item, i) => (
-          <img key={i} src={item.images.landscape} className="" alt={tech.name} />
-          // <Item key={i} item={item} />
-        ))}
-      </Carousel>
       <div className={`${styles.techBody} d-flex flex-column flex-lg-row`}>
-        <div className={`${styles.img} order-lg-last mt-3`}>
+        {/* <div className={`${styles.img} order-lg-last mt-3`}>
           <img src={pf} className="" alt={tech.name} />
-        </div>
+        </div> */}
+
+        <Carousel>
+          {techData.map((item, i) => (
+            <div key={i} className={`${styles.img} order-lg-last mt-3`}>
+              <img
+                key={i}
+                src={item.images.landscape}
+                className=""
+                alt={tech.name}
+              />
+            </div>
+          ))}
+        </Carousel>
         <div
           className={`${styles.carousel} d-flex justify-content-center flex-lg-column justify-content-lg-between`}
         >
