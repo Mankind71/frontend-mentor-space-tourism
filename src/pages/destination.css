@@ -27,6 +27,13 @@
 .heroImg img {
   width: 100%;
 }
+.contentTabs > div {
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .contentTabs p {
   font-size: 14px;
   color: var(--medium_color);
@@ -110,24 +117,80 @@
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
-  
 }
 
 @media only screen and (min-width: 992px) {
   .bgDest {
     background-image: url("/src//assets//destination/background-destination-desktop.jpg");
   }
-
   .heroTitle h3 {
     font-size: 28px;
     padding-top: 4rem;
     padding-left: 5rem;
     margin-left: 5rem;
   }
-  .dataName{
+  .main {
+    display: flex;
+    margin: auto;
+  }
+  .main > div{
+    flex: 1;
+    /* background-color: #ace; */
+  }
+
+  .heroImg {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10%;
+  }
+  .heroImg img{
+    /* background-color: #235; */
+    height: 90%;
+    width: auto;
+  }
+  .content{
+    /* background-color: #aaa; */
+    width: 70%;
+  }
+  .content *{
+    text-align: left;
+  }
+  .dataName {
     font-size: 56px;
   }
-  .description{
+  .contentTabs > div {
+    font-size: 16px;
+    width: 70%;
+    justify-content: space-between;
+    margin-left: 0;
+  }
+  .content .name{
+    font-size: 100px;
+  }
+  .description {
+    width: 100%;
+    /* background-color: #fff; */
     font-size: 18px;
+    margin-left: 0;
+    padding: 0;
+  }
+  .content hr{
+    margin-top: 4rem;
+    width: 100%;
+    margin-left: 0;
+  }
+  .details{
+    width: 80%;
+    /* margin-left: 0; */
+    /* padding-top: 0rem; */
+    /* padding-bottom: 0rem; */
+  }
+  .details h5 {
+    margin-bottom: 3px;
+  }
+  .details p {
+    margin-top: 0;
   }
 }

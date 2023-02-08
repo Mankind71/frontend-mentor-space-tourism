@@ -1,0 +1,51 @@
+
+.carouselBtn {
+  margin: 25px 10px !important;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border: solid 1px rgba(255, 255, 255, 0.5) !important;
+  background-color: #111;
+  color: white;
+  font-size: 16px;
+  /* color: rgb(255, 255, 255); */
+}
+.activeCarouselBtn {
+  background-color: #fff !important;
+  color: black !important;
+  opacity: 1;
+}
+.carouselBtn:hover {
+  border: solid 1px rgba(255, 255, 255, 1) !important;
+  color: white !important;
+}
+.activeCarouselBtn:hover {
+  color: black !important;
+  opacity: .7 !important;
+}
+@media only screen and (min-width: 768px) {
+  .carouselBtn {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .carouselBtnCon{
+    position: fixed;
+    /* background-color: #f3f; */
+    left: 150px !important;
+    bottom: 25% !important;
+    width: 100px !important;
+    display: flex;
+    /* overflow: scroll; */
+    flex-direction: column;
+    height: 300px;
+    z-index: 999;
+  }
+  .carouselBtn {
+    height: 80px;
+    width: 80px;
+  }
+}
