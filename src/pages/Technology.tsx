@@ -1,15 +1,11 @@
 import data from "../data.json";
 import { useEffect, useState } from "react";
 import Carousel from "react-material-ui-carousel";
-import { Button } from "@mui/material";
 import styles from "./Technology.module.css";
-import Home from "@mui/icons-material/Home";
-import './technology.css'
 
 const Technology = () => {
   const [num, setNum] = useState(0);
   const [width, setWidth] = useState(window.innerWidth);
-  const arrayOfNums = [1,2,3];
   
   const techData = data.technology;
   const tech = techData[num];
@@ -22,8 +18,6 @@ const Technology = () => {
       window.removeEventListener("resize", checkWidth);
     };
   });
-
-  const pf = width > 992 ? "portrait" : "landscape";
 
   return (
     <div className={`${styles.bgTech} topSpace`}>
@@ -38,47 +32,12 @@ const Technology = () => {
       >
         <div className={`${styles.carouselCon} carouselCon`}>
           <Carousel
-            IndicatorIcon={null}
+            indicators={false}
             onChange={(next) => {
               if (next == undefined) return;
               setNum(next);
             }}
             index={num}
-            // navButtonsAlwaysInvisible={true}
-            // onChange={(next) => {
-            //   if (next == undefined) return;
-            //   setNum(next);
-            // }}
-            // next={(next) => {
-            //   if (next == undefined) return;
-            //   setNum(next);
-            // }}
-            // prev={(prev) => {
-            //   if (prev == undefined) return;
-            //   setNum(prev);
-            // }}
-            // navButtonsProps={{
-            //   style: {
-            //     backgroundColor: "cornflowerblue",
-            //     borderRadius: 0,
-            //   },
-            // }}
-            // navButtonsWrapperProps={{
-            //   style: {
-            //     bottom: "0",
-            //     top: "unset",
-            //   },
-            // }}
-            // IndicatorIcon={arrayOfNums}
-            // indicatorIconButtonProps={{
-            //   className: "carouselBtn",
-            // }}
-            // activeIndicatorIconButtonProps={{
-            //   className: "activeCarouselBtn",
-            // }}
-            // indicatorContainerProps={{
-            //   className: "carouselBtnCon",
-            // }}
           >
             {techData.map((item, i) => (
               <div
@@ -103,7 +62,7 @@ const Technology = () => {
         <div
           className={`${styles.carousel} d-flex justify-content-center flex-lg-column justify-content-lg-between`}
         >
-          {techData.map((c, i) => ( 
+          {techData.map((c, i) => (
             <div
               key={i}
               onClick={() => setNum(i)}

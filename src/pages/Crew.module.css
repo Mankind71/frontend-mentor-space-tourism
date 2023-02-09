@@ -6,40 +6,40 @@
   min-height: 100vh;
   color: white;
 }
-.img{
+.img {
   margin: auto;
   width: 80%;
   height: 37vh;
   border-bottom: 2px solid #383B4B;
 }
-.img img{
-  object-fit: contain;
+.img img {
+  /* object-fit: contain; */
   height: 100%;
 }
-.carouselBtn{
+.carouselBtn {
   margin: 25px 10px;
   border-radius: 50%;
   height: 10px;
   width: 10px;
   cursor: pointer;
   background-color: #979797;
-  opacity: .17;
+  opacity: 0.17;
 }
-.carouselBtn:hover{
+.carouselBtn:hover {
   opacity: 1;
 }
-.active{
+.active {
   background-color: #fff;
   opacity: 1;
 }
-.role{
+.role {
   text-transform: uppercase;
   font-family: var(--bellefair);
   font-size: 16px;
-  opacity: .5;
+  opacity: 0.5;
   margin: 10px;
 }
-.bio{
+.bio {
   margin: 0 auto;
   width: 80%;
   font-size: 15px;
@@ -49,29 +49,52 @@
   .bgCrew {
     background-image: url("/src//assets//crew/background-crew-tablet.jpg");
   }
-  .crewBody{
+  .crewBody {
     padding-bottom: 0;
   }
-  .role{
+  .role {
     font-size: 24px;
   }
-  .crewBody .carouselCon{
+  .crewBody .carouselCon {
     margin-bottom: 0;
     margin-top: 0;
   }
-  .crewBody .img{
+  .crewBody .img {
     margin-bottom: 0;
     margin-top: 0;
     height: 50vh;
   }
-  
 }
 
 @media only screen and (min-width: 992px) {
   .bgCrew {
     background-image: url("/src//assets//crew/background-crew-desktop.jpg");
   }
+  .heroTitle{
+    /* background-color: #aaa; */
+    margin-bottom: 0 !important;
+  }
   .crewBody{
-    
+    margin: 0 !important;
+    /* background-color: #fff; */
+  }
+  .content {
+    /* background-color: #3de; */
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 10%;
+  }
+  .description{
+    width: 70%;
+  }
+  .crewBody .img {
+    height: 80vh;
+    position: relative;
+    top: -10px;
+    border-bottom: none;
+  }
+  .carouselCon{
+    position: relative;
+    top: 22rem;
   }
 }

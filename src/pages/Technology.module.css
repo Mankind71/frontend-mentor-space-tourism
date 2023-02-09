@@ -74,6 +74,9 @@
     order: 2;
     width: 100% !important;
   }
+  .carousel{
+    /* height: 250px; */
+  }
   .desc *{
     /* background-color: #de2111; */
     margin-left: 20%;
@@ -85,8 +88,11 @@
     justify-content: center;
   }
   .carouselBtn {
+    margin-bottom: 5px;
+    /* background-color: #fff; */
     height: 80px;
     width: 80px;
+
   }
   .role{
     font-size: 16px;
