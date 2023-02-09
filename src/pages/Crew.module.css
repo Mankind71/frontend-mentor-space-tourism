@@ -10,10 +10,12 @@
   margin: auto;
   width: 80%;
   height: 37vh;
+  min-height: fit-content;
   border-bottom: 2px solid #383B4B;
+  /* padding-bottom: 10px; */
+
 }
 .img img {
-  /* object-fit: contain; */
   height: 100%;
 }
 .carouselBtn {
@@ -62,6 +64,7 @@
   .crewBody .img {
     margin-bottom: 0;
     margin-top: 0;
+    border-bottom: none;
     height: 50vh;
   }
 }
@@ -88,10 +91,11 @@
     width: 70%;
   }
   .crewBody .img {
-    height: 80vh;
-    position: relative;
-    top: -10px;
-    border-bottom: none;
+    /* background-color: #fff; */
+    height: 61vh;
+    /* position: absolute; */
+    top: -0px;
+    right: -10px;
   }
   .carouselCon{
     position: relative;

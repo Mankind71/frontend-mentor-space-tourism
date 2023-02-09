@@ -71,15 +71,17 @@
     justify-content: space-between;
   }
   .carouselCon{
+    /* background-color: #fff; */
+    /* width: 400px; */
     order: 2;
-    width: 100% !important;
+    width: 75% ;
   }
-  .carousel{
-    /* height: 250px; */
+  .mainCarousel{
+    /* background-color: #32321d;  */
   }
   .desc *{
     /* background-color: #de2111; */
-    margin-left: 20%;
+    margin-left: 10%;
     width: 80%;
     text-align: left;
     display: flex;

@@ -12,11 +12,13 @@ const Destination = () => {
     <div className="bgDest topSpace">
       <div className="">
         <div className="heroTitle">
-          <h3 className="text-uppercase">
+          <h3
+            className="text-uppercase d-lg-flex align-item-center mb-lg-0 pt-0"
+          >
             <span>01</span> pick your destination
           </h3>
         </div>
-        <div className="main">
+        <div className="main mt-4">
           <div className="heroImg mx-auto mt-4">
             <img src={pf} alt="moon" />
           </div>
@@ -37,7 +39,7 @@ const Destination = () => {
               </div>
               <div className="name">{dest.name}</div>
               <div className="description">{dest.description}</div>
-{/* 
+              {/* 
               <div className="description">
                 See our planet as you’ve never seen it before. A perfect
                 relaxing trip away to help regain perspective and come back

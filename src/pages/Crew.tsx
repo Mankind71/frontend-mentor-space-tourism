@@ -27,6 +27,7 @@ const Crew = () => {
               setNum(next);
             }}
             index={num}
+            navButtonsAlwaysInvisible={false}
           >
             {crewData.map((item, i) => (
               <div

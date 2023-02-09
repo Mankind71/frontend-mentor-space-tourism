@@ -4,9 +4,9 @@ import Carousel from "react-material-ui-carousel";
 import styles from "./Technology.module.css";
 
 const Technology = () => {
-  const [num, setNum] = useState(0);
+  const [num, setNum] = useState(1);
   const [width, setWidth] = useState(window.innerWidth);
-  
+
   const techData = data.technology;
   const tech = techData[num];
 
@@ -28,7 +28,7 @@ const Technology = () => {
       </div>
 
       <div
-        className={`${styles.techBody} d-flex flex-column flex-lg-row align-items-lg-center py-lg-5 techBody`}
+        className={`${styles.techBody} d-flex flex-column flex-lg-row align-items-lg-center techBody`}
       >
         <div className={`${styles.carouselCon} carouselCon`}>
           <Carousel
@@ -37,7 +37,9 @@ const Technology = () => {
               if (next == undefined) return;
               setNum(next);
             }}
+            navButtonsAlwaysInvisible={false}
             index={num}
+            className={styles.mainCarousel}
           >
             {techData.map((item, i) => (
               <div
