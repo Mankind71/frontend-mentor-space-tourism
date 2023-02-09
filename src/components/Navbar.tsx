@@ -22,7 +22,7 @@ const Navbar = () => {
   const handleClose = () => setShow(false);
   return (
     <NavbarBs expand="md" className="mb-3 navbar p-0">
-      <Container fluid className="fluidCon p-4 p-md-0">
+      <Container fluid className="fluidCon py-1 px-0 p-md-0">
         <NavbarBs.Brand to="/" as={NavLink} className="logo ms-3 ms-md-5">
           <img src={logo} alt="logo" />
         </NavbarBs.Brand>
