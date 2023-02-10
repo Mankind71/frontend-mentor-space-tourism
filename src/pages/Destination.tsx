@@ -13,7 +13,7 @@ const Destination = () => {
       <div className="">
         <div className="heroTitle">
           <h3
-            className="text-uppercase d-lg-flex align-item-center mb-lg-0 pt-0"
+            className="text-uppercase d-lg-flex align-item-center "
           >
             <span>01</span> pick your destination
           </h3>

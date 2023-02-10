@@ -4,7 +4,7 @@ import Carousel from "react-material-ui-carousel";
 import styles from "./Technology.module.css";
 
 const Technology = () => {
-  const [num, setNum] = useState(1);
+  const [num, setNum] = useState(2);
   const [width, setWidth] = useState(window.innerWidth);
 
   const techData = data.technology;
@@ -38,6 +38,7 @@ const Technology = () => {
               setNum(next);
             }}
             navButtonsAlwaysInvisible={false}
+            changeOnFirstRender={true}
             index={num}
             className={styles.mainCarousel}
           >
