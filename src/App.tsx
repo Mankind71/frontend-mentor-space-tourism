@@ -8,19 +8,19 @@ import "./app.css";
 
 function App() {
   return (
-    <div className="app">
-      <div className="navbarCon">
+    <main className="app">
+      <nav className="navbarCon">
         <Navbar />
-      </div>
-      <div className="">
+      </nav>
+      <section className="">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/crew" element={<Crew />} />
           <Route path="/destination" element={<Destination />} />
           <Route path="/technology" element={<Technology />} />
         </Routes>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 
