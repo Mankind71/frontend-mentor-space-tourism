@@ -9,9 +9,9 @@ import "./app.css";
 function App() {
   return (
     <main className="app">
-      <nav className="navbarCon">
+      <section className="navbarCon">
         <Navbar />
-      </nav>
+      </section>
       <section className="">
         <Routes>
           <Route path="/" element={<Home />} />
