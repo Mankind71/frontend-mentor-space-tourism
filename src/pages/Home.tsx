@@ -3,7 +3,7 @@ import "./home.css";
 
 const Home = () => {
   return (
-    <main className="bgHome topSpace text-center d-flex flex-column align-items-center justify-content-between flex-lg-row ">
+    <section className="bgHome topSpace text-center d-flex flex-column align-items-center justify-content-between flex-lg-row ">
       <div className="infoCon">
         <h1 className="text-title">So, you want to travel to</h1>
         <div className="space">Space</div>
@@ -17,7 +17,7 @@ const Home = () => {
       <div className="d-flex align-items-center justify-content-center mx-auto explore rounded-circle">
         <p>EXPLORE</p>
       </div>
-    </main>
+    </section>
   );
 };
 
